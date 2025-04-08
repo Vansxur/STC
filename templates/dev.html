@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Login</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+    <main class="container" style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+        <h2>Connexion</h2>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        <form style="width: 100%; max-width: 400px;">
+            <input type="text" name="u" placeholder="Nom d'utilisateur" required>
+            <input type="password" name="p" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Au moins tu sais cliquer sur un bouton...</p>
+        <p style="color: gold">STC{TropFacileCestMemePasUnChallenge}</p>
+        <a>Mot de passe oublié ?</a>
+        <br>
+        <p style="font-size: 0.8em; text-decoration: none; color: #1a3d5d;">Version 1.58.25</p>
+    </main>
+</body>
+</html>

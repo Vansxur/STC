@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface d'Administration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"></head>
+
+<body>
+    <main class="container">
+    <nav>
+        <ul>
+            <li>Bonjour <strong>{{ username }}</strong>, vous êtes : <strong>{{ role }}</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/admin" style="text-decoration: none;" disabled hidden>Admin</a></li>
+          <li><a href="/config">Config</a></li>
+          <li><a href="/notes">Notes</a></li>
+          <li><a href="/logout">Déconnexion</a></li>
+        </ul>
+      </nav>
+      <section style="display: flex; justify-content: center; align-items: center; height: 800px; flex-direction: column;">
+        <p>Tiens, prends ce flag, tu l'as bien mérité !</p>
+        <p style="font-size: 25px; color: gold">STC{ae50d71c8b56035b233e8021f3cc05cc}</p>
+      </section>
+    </main>
+</body>
+</html>

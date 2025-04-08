@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Réinitialisation</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+    <main class="container" style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;">
+        <div>
+            <h2>Réinitialisation du mot de passe</h2>
+            {% if message %}
+                <p>{{ message }}</p>
+            {% endif %}
+            <form method="POST">
+                <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+                <button type="submit">Réinitialiser</button>
+            </form>
+            {{ password_comment|safe }}
+            <a href="/">Retour à la connexion</a>
+        </div>
+    </main>
+</body>
+</html>
