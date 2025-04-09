@@ -8,6 +8,7 @@ Voici comment procéder :
 
 Télécharge l'application : git clone https://github.com/Vansxur/STC
 ⚠️ Ne lis surtout pas le contenu des fichiers app.py, templates/ et database.db.
+Vérifie également que ton port 5000 n'est pas en utilisation. 
 
 Entre les commandes suivantes : 
 chmod +x run.sh
